@@ -8,51 +8,51 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    /* Elegant Dark Purple System */
-    --background: 240 15% 6%;
+    /* Aggressive Dark Purple System */
+    --background: 255 15% 3%;
     --foreground: 0 0% 98%;
 
-    --card: 240 20% 10%;
+    --card: 255 25% 8%;
     --card-foreground: 0 0% 95%;
 
-    --popover: 240 20% 10%;
+    --popover: 255 25% 8%;
     --popover-foreground: 0 0% 95%;
 
-    --primary: 270 80% 65%;
+    --primary: 270 100% 75%;
     --primary-foreground: 0 0% 98%;
-    --primary-glow: 270 80% 75%;
+    --primary-glow: 270 100% 85%;
 
-    --secondary: 240 25% 12%;
+    --secondary: 255 30% 15%;
     --secondary-foreground: 0 0% 95%;
 
-    --muted: 240 15% 8%;
+    --muted: 255 20% 10%;
     --muted-foreground: 240 10% 70%;
 
-    --accent: 45 100% 60%;
+    --accent: 120 100% 55%;
     --accent-foreground: 0 0% 5%;
-    --accent-glow: 45 100% 70%;
+    --accent-glow: 120 100% 70%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
 
-    --border: 240 20% 15%;
-    --input: 240 20% 12%;
-    --ring: 270 80% 65%;
+    --border: 255 30% 18%;
+    --input: 255 30% 15%;
+    --ring: 270 100% 75%;
 
     /* Futuristic Gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(270 80% 65%) 0%, hsl(280 70% 70%) 100%);
-    --gradient-secondary: linear-gradient(135deg, hsl(240 20% 10%) 0%, hsl(250 25% 12%) 100%);
-    --gradient-accent: linear-gradient(135deg, hsl(45 100% 60%) 0%, hsl(50 90% 65%) 100%);
-    --gradient-hero: linear-gradient(135deg, hsl(240 15% 6%) 0%, hsl(250 20% 8%) 50%, hsl(240 15% 4%) 100%);
-    --gradient-card: linear-gradient(135deg, hsl(240 20% 10% / 0.95) 0%, hsl(250 25% 12% / 0.98) 100%);
-    --gradient-glow: linear-gradient(135deg, hsl(270 80% 65% / 0.15) 0%, hsl(45 100% 60% / 0.15) 100%);
+    --gradient-primary: linear-gradient(135deg, hsl(270 100% 75%) 0%, hsl(300 100% 80%) 50%, hsl(270 100% 85%) 100%);
+    --gradient-secondary: linear-gradient(135deg, hsl(255 25% 8%) 0%, hsl(270 30% 12%) 50%, hsl(255 25% 8%) 100%);
+    --gradient-accent: linear-gradient(135deg, hsl(120 100% 55%) 0%, hsl(140 100% 60%) 100%);
+    --gradient-hero: radial-gradient(ellipse at top, hsl(270 100% 12%) 0%, hsl(255 15% 3%) 50%, hsl(0 0% 0%) 100%);
+    --gradient-card: linear-gradient(135deg, hsl(255 25% 8% / 0.8) 0%, hsl(270 30% 10% / 0.9) 100%);
+    --gradient-glow: linear-gradient(135deg, hsl(270 100% 75% / 0.2) 0%, hsl(120 100% 55% / 0.2) 100%);
     
     /* AI-Style Shadows & Glows */
-    --shadow-premium: 0 20px 40px -8px hsl(270 80% 65% / 0.3), 0 0 30px hsl(270 80% 75% / 0.2);
-    --shadow-accent: 0 10px 30px -5px hsl(45 100% 60% / 0.4), 0 0 20px hsl(45 100% 70% / 0.3);
-    --shadow-card: 0 10px 30px -5px hsl(0 0% 0% / 0.4), 0 0 15px hsl(270 40% 40% / 0.1);
-    --shadow-neon: 0 0 15px hsl(270 80% 65%), 0 0 30px hsl(270 80% 65% / 0.4);
-    --shadow-cyber: inset 0 1px 0 hsl(270 80% 65% / 0.15), 0 1px 2px hsl(0 0% 0% / 0.2);
+    --shadow-premium: 0 25px 60px -12px hsl(270 100% 75% / 0.4), 0 0 40px hsl(270 100% 85% / 0.3);
+    --shadow-accent: 0 15px 40px -8px hsl(120 100% 55% / 0.5), 0 0 30px hsl(120 100% 70% / 0.4);
+    --shadow-card: 0 20px 40px -10px hsl(0 0% 0% / 0.3), 0 0 20px hsl(270 50% 50% / 0.1);
+    --shadow-neon: 0 0 20px hsl(270 100% 75%), 0 0 40px hsl(270 100% 75% / 0.5), 0 0 60px hsl(270 100% 75% / 0.3);
+    --shadow-cyber: inset 0 1px 0 hsl(270 100% 75% / 0.2), 0 1px 3px hsl(0 0% 0% / 0.3);
 
     /* Advanced Animations */
     --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
@@ -155,58 +155,26 @@ All colors MUST be HSL.
   /* Cyber Grid Pattern */
   .cyber-grid {
     background-image: 
-      linear-gradient(rgba(120, 119, 198, 0.05) 1px, transparent 1px),
-      linear-gradient(90deg, rgba(120, 119, 198, 0.05) 1px, transparent 1px);
-    background-size: 40px 40px;
+      linear-gradient(rgba(120, 119, 198, 0.1) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(120, 119, 198, 0.1) 1px, transparent 1px);
+    background-size: 20px 20px;
   }
 
   /* Glowing Text */
   .text-glow {
-    text-shadow: 0 0 8px hsl(var(--primary)), 0 0 16px hsl(var(--primary));
+    text-shadow: 0 0 10px hsl(var(--primary)), 0 0 20px hsl(var(--primary)), 0 0 30px hsl(var(--primary));
   }
 
   .text-accent-glow {
-    text-shadow: 0 0 8px hsl(var(--accent)), 0 0 16px hsl(var(--accent));
+    text-shadow: 0 0 10px hsl(var(--accent)), 0 0 20px hsl(var(--accent));
   }
 
   /* Neon Border */
   .neon-border {
     border: 1px solid hsl(var(--primary));
     box-shadow: 
-      0 0 8px hsl(var(--primary) / 0.3),
-      inset 0 0 8px hsl(var(--primary) / 0.08);
-  }
-
-  /* Professional Photo Container */
-  .photo-container {
-    position: relative;
-    overflow: hidden;
-    border-radius: 50%;
-    background: var(--gradient-primary);
-    padding: 3px;
-  }
-
-  .photo-container::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    border-radius: 50%;
-    background: var(--gradient-primary);
-    animation: rotate 3s linear infinite;
-    z-index: -1;
-  }
-
-  .photo-inner {
-    border-radius: 50%;
-    overflow: hidden;
-    background: hsl(var(--background));
-    position: relative;
-    z-index: 1;
-  }
-
-  @keyframes rotate {
-    from { transform: rotate(0deg); }
-    to { transform: rotate(360deg); }
+      0 0 10px hsl(var(--primary) / 0.5),
+      inset 0 0 10px hsl(var(--primary) / 0.1);
   }
 
   /* Floating Animation */
@@ -226,11 +194,11 @@ All colors MUST be HSL.
 
   @keyframes pulse-glow {
     0%, 100% { 
-      box-shadow: 0 0 15px hsl(var(--accent) / 0.25);
+      box-shadow: 0 0 20px hsl(var(--accent) / 0.3);
       transform: scale(1);
     }
     50% { 
-      box-shadow: 0 0 25px hsl(var(--accent) / 0.45);
+      box-shadow: 0 0 40px hsl(var(--accent) / 0.6);
       transform: scale(1.02);
     }
   }
